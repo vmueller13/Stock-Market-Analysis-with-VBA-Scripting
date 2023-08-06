@@ -1,14 +1,20 @@
-# vba_challenge
+# Module 2 Challenge: Excel VBA
+<ins>Project Overview</ins>
+-----
+
+This project utilizes VBA scripting to analyze generated stock market data. The main ask for this challenge was to creat a script that loops through all the stocks for one year adn outputs the following information:
+* The ticker symbol
+* Yearly change from the opening price at the beginning of a given year to the closing price at the end of that year.
+* The percentage change from the opening price at the beginning of a given year to the closing price at the end of that year.
+* The total stock volume of the stock.
+
+<ins>Processes and Technologies</ins>
+-----
 
 
-The first ask for this challenge was to go through the ticker list and have each individual ticker populate in a separate column. Then to have the yearly change, percent change and total stock volume populate in the columns as well.
+To complete the ask, I started with a for loop that would cycle through each worksheet and print out the unique ticker symbols. To get the other values from the data and have them populate in the proper columns, I started by assigning the variables opening and closing values and use the assigned values in a new count 'j' to determine the change over the year. Next, I compared each of these variables to the current and previous cell and reassigned the value based on which one was larger. Eventually, the largest values were assigned to the variable and the second summary table populated. When run from start to finish, the code loops through each sheet of the workbook.
 
-To do this I started with a for loop that would run for each worksheeet. This For loop looked through the 'I' column and looked for the row that wasn't equal to the one before and then it would print out the ticker symbol.
+<ins>Challenges</ins>
+-----
 
-To get the other values from the data and have them populate in the proper columns, I started by assigning the variables opening and closing and use those in a new count 'j' to determine the change over the year.
-
-Next, I named the titles for the second summary table and set up the variables for percent increase, percent decrease and greatest total volume. I compared each of these variables to the current and previous cell and reassigned the value based on which one was larger. Eventually, the largest values were assigned to the variable and the second summary table populated.
-
-For the conditional formatting, if the value was greater than 0 it was green and if it was less than 0, it was red.
-
-Finally, this entire code would then run on the next worksheet.
+The biggest challenge I ran into on this project was setting up the original for loop to calculate the sum of the total stock volume using the `Count = Count + 1` formula. Once I configured this part of the formula correctly, I was able run the code correctly and completely.
