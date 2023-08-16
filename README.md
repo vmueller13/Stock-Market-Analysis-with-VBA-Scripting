@@ -1,4 +1,4 @@
-# Module 2 Challenge: Excel VBA
+# Excel VBA
 <ins>Project Overview</ins>
 -----
 
